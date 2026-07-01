@@ -323,18 +323,19 @@
 		border: 1px solid rgba(255, 255, 255, 0.7);
 		background: #ffffff;
 		box-shadow: var(--shadow-soft-strong);
-		height: 100%;
-		min-height: clamp(11.75rem, 18vw, 14rem);
+		height: auto;
+		min-height: clamp(8.5rem, 12vw, 10rem);
+		max-height: clamp(9.75rem, 14vw, 11rem);
 	}
 
 	.cards-equal-layout {
-		align-items: stretch;
-		grid-auto-rows: 1fr;
+		align-items: start;
+		grid-auto-rows: auto;
 	}
 
 	.card-uniform {
-		height: 100%;
-		min-height: clamp(11.75rem, 18vw, 14rem);
+		height: auto;
+		min-height: clamp(9.5rem, 13vw, 11rem);
 	}
 
 	.card-media img {

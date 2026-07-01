@@ -98,6 +98,9 @@
 - Card rese piu compatte: ridotte le altezze minime di `card-uniform` e `card-media` per contenere l'impatto verticale.
 - Griglie asimmetriche rifinite per evitare righe incomplete: ribilanciati col-span in Home Aree, Servizi, Aree Bento e Pilastri Chi sono.
 - Obiettivo del pass: mantenere asimmetria controllata senza "buchi" o incastri visivi tra card.
+- Corretto effetto "row inflation": rimosso comportamento di equalizzazione rigida delle righe (`grid-auto-rows: 1fr`) che alzava tutte le card quando un elemento era piu grande.
+- Card mantenute su altezza minima compatta locale (`card-uniform`) senza trascinare l'intera riga.
+- Immagini/card-media ulteriormente abbassate con vincolo massimo di altezza per ridurre impatto visivo.
 
 ## Stato attuale
 - Repository pronta per ricevere il PDF dell'intervista.
