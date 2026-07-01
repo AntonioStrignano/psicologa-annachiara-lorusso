@@ -101,6 +101,11 @@
 - Corretto effetto "row inflation": rimosso comportamento di equalizzazione rigida delle righe (`grid-auto-rows: 1fr`) che alzava tutte le card quando un elemento era piu grande.
 - Card mantenute su altezza minima compatta locale (`card-uniform`) senza trascinare l'intera riga.
 - Immagini/card-media ulteriormente abbassate con vincolo massimo di altezza per ridurre impatto visivo.
+- Affinata logica altezze griglia: la riga ora viene guidata dalle card testuali (card-uniform) e non dalle card immagine.
+- Card media scollegate dall'uniformazione altezza e rese piu compatte, evitando che elementi visuali "tirino su" tutte le card della riga.
+- Hero Contatti resa piu compatta tramite nuovo spacing `section-pad-compact`.
+- Pagina Servizi: blocco "Ambiti di lavoro" convertito in variante lista editoriale (piu lineare, meno card-centric), mantenendo estetica generale del brand.
+- `AreasBento` ora supporta due varianti (`cards` e `list`) per adattare la presentazione in base al contesto pagina.
 
 ## Stato attuale
 - Repository pronta per ricevere il PDF dell'intervista.

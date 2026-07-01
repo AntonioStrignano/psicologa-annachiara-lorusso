@@ -13,34 +13,58 @@ interface Props {
   description: string;
   items: Area[];
   sectionId?: string;
+  variant?: "cards" | "list";
 }
 
-const { eyebrow, title, description, items, sectionId } = Astro.props;
+const { eyebrow, title, description, items, sectionId, variant = "cards" } = Astro.props;
 ---
 
 <section id={sectionId} class="section-pad">
   <div class="container-site">
     <SectionHeading eyebrow={eyebrow} title={title} description={description} />
-    <div class="cards-equal-layout mt-10 grid gap-5 md:grid-cols-6">
-      {items.map((item, index) => (
-        <article class:list={[
-          "card-soft-elevated card-uniform interactive-lift rounded-3xl border border-outline-variant/35 p-6",
-          index === 0 && "md:col-span-3 lg:col-span-2",
-          index === 1 && "md:col-span-3 lg:col-span-2",
-          index === 2 && "md:col-span-3 lg:col-span-2",
-          index === 3 && "md:col-span-3 lg:col-span-3",
-          index === 4 && "md:col-span-3 lg:col-span-3",
-          index === 5 && "md:col-span-3 lg:col-span-2",
-        ]}>
-          <h3 class="font-headline text-2xl text-tertiary">{item.title}</h3>
-          <p class="mt-3 leading-relaxed text-on-surface-variant">{item.description}</p>
-        </article>
-      ))}
+    {variant === "list" ? (
+      <div class="mt-10 grid gap-4 lg:grid-cols-2">
+        {items.map((item, index) => (
+          <article class="card-soft-elevated interactive-lift rounded-3xl border border-outline-variant/35 p-5">
+            <div class="flex items-start gap-4">
+              <span class="mt-1 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-secondary/12 text-sm font-bold text-secondary">
+                {index + 1}
+              </span>
+              <div>
+                <h3 class="font-headline text-2xl text-tertiary">{item.title}</h3>
+                <p class="mt-2 leading-relaxed text-on-surface-variant">{item.description}</p>
+              </div>
+            </div>
+          </article>
+        ))}
 
-      <article class="card-media card-uniform md:col-span-6 lg:col-span-4">
-        <img src={site.brandImage} alt={`Percorso di supporto ${site.brandName}`} loading="lazy" decoding="async" />
-        <p class="card-media-caption">Ogni percorso ha il suo ritmo</p>
-      </article>
-    </div>
+        <article class="card-media lg:col-span-2">
+          <img src={site.brandImage} alt={`Percorso di supporto ${site.brandName}`} loading="lazy" decoding="async" />
+          <p class="card-media-caption">Ogni percorso ha il suo ritmo</p>
+        </article>
+      </div>
+    ) : (
+      <div class="cards-equal-layout mt-10 grid gap-5 md:grid-cols-6">
+        {items.map((item, index) => (
+          <article class:list={[
+            "card-soft-elevated card-uniform interactive-lift rounded-3xl border border-outline-variant/35 p-6",
+            index === 0 && "md:col-span-3 lg:col-span-2",
+            index === 1 && "md:col-span-3 lg:col-span-2",
+            index === 2 && "md:col-span-3 lg:col-span-2",
+            index === 3 && "md:col-span-3 lg:col-span-3",
+            index === 4 && "md:col-span-3 lg:col-span-3",
+            index === 5 && "md:col-span-3 lg:col-span-2",
+          ]}>
+            <h3 class="font-headline text-2xl text-tertiary">{item.title}</h3>
+            <p class="mt-3 leading-relaxed text-on-surface-variant">{item.description}</p>
+          </article>
+        ))}
+
+        <article class="card-media md:col-span-6 lg:col-span-4">
+          <img src={site.brandImage} alt={`Percorso di supporto ${site.brandName}`} loading="lazy" decoding="async" />
+          <p class="card-media-caption">Ogni percorso ha il suo ritmo</p>
+        </article>
+      </div>
+    )}
   </div>
 </section>

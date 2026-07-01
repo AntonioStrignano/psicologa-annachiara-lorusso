@@ -127,6 +127,10 @@
 		padding-block: clamp(5rem, 8vw, 7.5rem);
 	}
 
+	.section-pad-compact {
+		padding-block: clamp(3rem, 5vw, 4.35rem);
+	}
+
 	.card-soft {
 		border-radius: 1.25rem;
 		background-color: #ffffff;
@@ -324,18 +328,19 @@
 		background: #ffffff;
 		box-shadow: var(--shadow-soft-strong);
 		height: auto;
-		min-height: clamp(8.5rem, 12vw, 10rem);
-		max-height: clamp(9.75rem, 14vw, 11rem);
+		min-height: clamp(7.5rem, 9vw, 9rem);
+		max-height: clamp(8.5rem, 10vw, 9.5rem);
+		align-self: start;
 	}
 
 	.cards-equal-layout {
-		align-items: start;
+		align-items: stretch;
 		grid-auto-rows: auto;
 	}
 
 	.card-uniform {
-		height: auto;
-		min-height: clamp(9.5rem, 13vw, 11rem);
+		height: 100%;
+		min-height: clamp(10.25rem, 12vw, 12rem);
 	}
 
 	.card-media img {
