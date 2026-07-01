@@ -1,0 +1,51 @@
+---
+import navigation from "../../content/site/navigation.json";
+import site from "../../content/site/site.json";
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="mt-10 border-t border-outline-variant/50 bg-atmosphere-soft">
+  <div class="container-site grid gap-10 py-12 md:grid-cols-2 xl:grid-cols-[1.3fr_1fr_1fr_1fr]">
+    <div>
+      <p class="font-headline text-2xl text-secondary">{site.brandName}</p>
+      <p class="mt-3 max-w-md text-sm leading-relaxed text-on-surface-variant">
+        Percorsi di supporto psicologico orientati alla persona, con un linguaggio chiaro e una presenza professionale.
+      </p>
+    </div>
+
+    <div>
+      <p class="section-eyebrow mb-4">Pagine</p>
+      <ul class="space-y-2 text-sm text-on-surface-variant">
+        {navigation.map((item) => (
+          <li><a href={item.href} class="transition-colors hover:text-secondary">{item.label}</a></li>
+        ))}
+      </ul>
+    </div>
+
+    <div>
+      <p class="section-eyebrow mb-4">Contatti</p>
+      <ul class="space-y-2 text-sm text-on-surface-variant">
+        <li><a href={`tel:${site.phone.replace(/\s+/g, "")}`} class="transition-colors hover:text-secondary">{site.phone}</a></li>
+        <li><a href={`mailto:${site.email}`} class="transition-colors hover:text-secondary">{site.email}</a></li>
+        <li><a href={`https://wa.me/${site.whatsappNumber}`} class="transition-colors hover:text-secondary">WhatsApp</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="section-eyebrow mb-4">Legale</p>
+      <ul class="space-y-2 text-sm text-on-surface-variant">
+        {site.legalLinks.map((link) => (
+          <li><a href={link.href} class="transition-colors hover:text-secondary">{link.label}</a></li>
+        ))}
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-outline-variant/50 bg-white/30 py-5">
+    <div class="container-site flex flex-col gap-2 text-xs text-on-surface-variant md:flex-row md:items-center md:justify-between">
+      <p>© {currentYear} {site.brandName}. Tutti i diritti riservati.</p>
+      <p>Psicologa Clinica</p>
+    </div>
+  </div>
+</footer>

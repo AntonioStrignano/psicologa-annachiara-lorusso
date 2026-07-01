@@ -1,0 +1,27 @@
+---
+import CtaBanner from "./CtaBanner.astro";
+
+interface Cta {
+  label: string;
+  href: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  primaryCta: Cta;
+  secondaryCta: Cta;
+}
+
+const { title, description, primaryCta, secondaryCta } = Astro.props;
+---
+
+<CtaBanner
+  eyebrow="Prenotazioni"
+  title={title}
+  description={description}
+  primaryLabel={primaryCta.label}
+  primaryHref={primaryCta.href}
+  secondaryLabel={secondaryCta.label}
+  secondaryHref={secondaryCta.href}
+/>

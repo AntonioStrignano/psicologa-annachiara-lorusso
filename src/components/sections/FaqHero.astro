@@ -1,0 +1,17 @@
+---
+import SectionHeading from "../layout/SectionHeading.astro";
+
+interface Props {
+  eyebrow: string;
+  title: string;
+  description: string;
+}
+
+const { eyebrow, title, description } = Astro.props;
+---
+
+<section class="section-pad bg-atmosphere-soft">
+  <div class="container-site">
+    <SectionHeading eyebrow={eyebrow} title={title} description={description} />
+  </div>
+</section>

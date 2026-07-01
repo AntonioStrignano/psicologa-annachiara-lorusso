@@ -1,0 +1,33 @@
+---
+import AboutHero from "../components/sections/AboutHero.astro";
+import AboutPillars from "../components/sections/AboutPillars.astro";
+import CtaBanner from "../components/sections/CtaBanner.astro";
+import chiSono from "../content/site/chi-sono.json";
+import site from "../content/site/site.json";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Chi sono | Dott.ssa Annachiara Lorusso" description={chiSono.hero.description}>
+  <div class="section-band-muted">
+    <AboutHero
+      eyebrow={chiSono.hero.eyebrow}
+      title={chiSono.hero.title}
+      description={chiSono.hero.description}
+      intro={chiSono.intro}
+      trainingTimeline={chiSono.trainingTimeline}
+      trainingNote={chiSono.trainingNote}
+    />
+  </div>
+
+  <AboutPillars items={chiSono.pillars} />
+
+  <CtaBanner
+    eyebrow="Primo passo"
+    title="Se desideri iniziare, possiamo parlarne"
+    description="Il primo colloquio conoscitivo e lo spazio per capire insieme il tuo bisogno e definire il percorso piu adatto."
+    primaryLabel="Apri modulo Google"
+    primaryHref={site.contactFormUrl}
+    secondaryLabel="Apri WhatsApp"
+    secondaryHref={`https://wa.me/${site.whatsappNumber}`}
+  />
+</BaseLayout>

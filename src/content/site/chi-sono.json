@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "eyebrow": "Chi sono",
+    "title": "Una presenza professionale, umana e orientata alla crescita",
+    "description": "Per me il benessere psicologico non è semplicemente stare meglio, ma riscoprirsi: diventare consapevoli di chi siamo e tornare a fiorire."
+  },
+  "intro": "Nel mio lavoro tengo insieme due cose che ritengo inseparabili: il calore della relazione umana e la solidità della scienza psicologica.",
+  "pillars": [
+    {
+      "title": "Empatia",
+      "description": "Tutto comincia da uno spazio sicuro, dove poterti raccontare senza paura di essere giudicato. È da questo ascolto, sincero e attento, che nasce la fiducia su cui costruiamo il percorso."
+    },
+    {
+      "title": "Rigore scientifico",
+      "description": "L'ascolto, da solo, non basta: va guidato dalla competenza. Lavoro con metodologie validate dalla ricerca e mi aggiorno di continuo, così da offrirti interventi davvero efficaci e pensati per te."
+    },
+    {
+      "title": "Alleanza terapeutica",
+      "description": "Il percorso non te lo consegno già pronto: lo costruiamo insieme. Non ricette uguali per tutti, ma un cammino in cui ti accompagno a riconoscere e attivare le risorse che hai già dentro di te, passo dopo passo."
+    },
+    {
+      "title": "Crescita",
+      "description": "Il traguardo è la tua autonomia. Ti lascio strumenti concreti e nuovi punti di vista, perché tu possa affrontare ciò che verrà con più forza e fiducia in te stessa."
+    }
+  ],
+  "trainingTimeline": [
+    {
+      "title": "Laurea in Psicologia Clinica",
+      "description": "Conseguita il 20 dicembre 2024. Percorso professionale in aggiornamento con nuove tappe formative in arrivo."
+    }
+  ],
+  "trainingNote": "Percorso professionale in aggiornamento. Attualmente: Laurea in Psicologia Clinica (20/12/2024)."
+}

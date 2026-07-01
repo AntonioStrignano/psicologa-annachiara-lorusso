@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CtaBanner from "../components/sections/CtaBanner.astro";
+import HomeAreasCards from "../components/sections/HomeAreasCards.astro";
+import HomeHero from "../components/sections/HomeHero.astro";
+import HomeTrustPillars from "../components/sections/HomeTrustPillars.astro";
+import home from "../content/site/home.json";
+import site from "../content/site/site.json";
+---
+
+<BaseLayout title="Home | Dott.ssa Annachiara Lorusso" description={home.hero.subtitle}>
+	<HomeHero
+		eyebrow={home.hero.eyebrow}
+		title={home.hero.title}
+		subtitle={home.hero.subtitle}
+		primaryCta={home.hero.primaryCta}
+		secondaryCta={home.hero.secondaryCta}
+	/>
+
+	<HomeAreasCards
+		eyebrow={home.areas.eyebrow}
+		title={home.areas.title}
+		description={home.areas.description}
+		ctaLabel={home.areas.ctaLabel}
+		ctaHref={home.areas.ctaHref}
+		items={home.areas.items}
+	/>
+
+	<HomeTrustPillars
+		eyebrow={home.pillars.eyebrow}
+		title={home.pillars.title}
+		description={home.pillars.description}
+		items={home.pillars.items}
+	/>
+
+	<CtaBanner
+		eyebrow={home.instagram.eyebrow}
+		title={home.instagram.title}
+		description={home.instagram.description}
+		primaryLabel={home.instagram.ctaLabel}
+		primaryHref={site.instagramUrl}
+		secondaryLabel="Apri modulo Google"
+		secondaryHref={site.contactFormUrl}
+	/>
+</BaseLayout>

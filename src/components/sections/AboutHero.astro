@@ -1,0 +1,51 @@
+---
+import SectionHeading from "../layout/SectionHeading.astro";
+
+interface TimelineItem {
+  title: string;
+  description: string;
+}
+
+interface Props {
+  eyebrow: string;
+  title: string;
+  description: string;
+  intro: string;
+  trainingNote?: string;
+  trainingTimeline?: TimelineItem[];
+}
+
+const { eyebrow, title, description, intro, trainingNote, trainingTimeline = [] } = Astro.props;
+
+const timelineItems =
+  trainingTimeline.length > 0
+    ? trainingTimeline
+    : [
+        {
+          title: "Percorso in aggiornamento",
+          description: trainingNote ?? "Dettagli del percorso professionale in aggiornamento.",
+        },
+      ];
+---
+
+<section class="section-pad">
+  <div class="container-site">
+    <SectionHeading eyebrow={eyebrow} title={title} description={description} />
+    <div class="mt-8 grid gap-6 lg:grid-cols-[1.3fr_1fr]">
+      <p class="card-soft-elevated card-highlight border border-outline-variant/35 p-8 text-lg leading-relaxed text-on-surface-variant">{intro}</p>
+      <aside class="card-soft-elevated border border-outline-variant/35 p-8">
+        <p class="section-eyebrow">Percorso professionale</p>
+
+        <ol class="relative mt-5 space-y-7 before:absolute before:bottom-2 before:left-[0.53rem] before:top-2 before:w-px before:bg-secondary/30">
+          {timelineItems.map((item) => (
+            <li class="relative pl-8">
+              <span class="absolute left-0 top-1.5 h-4 w-4 rounded-full border-2 border-secondary/45 bg-white shadow-[0_6px_16px_rgba(103,88,120,0.22)]"></span>
+              <h3 class="font-headline text-xl leading-tight text-secondary">{item.title}</h3>
+              <p class="mt-2 leading-relaxed text-on-surface-variant">{item.description}</p>
+            </li>
+          ))}
+        </ol>
+      </aside>
+    </div>
+  </div>
+</section>

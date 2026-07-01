@@ -1,0 +1,36 @@
+---
+import ServicesBookingSection from "../components/sections/ServicesBookingSection.astro";
+import ServicesGrid from "../components/sections/ServicesGrid.astro";
+import AreasBento from "../components/sections/AreasBento.astro";
+import servizi from "../content/site/servizi.json";
+import aree from "../content/site/aree.json";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Servizi e aree di intervento | Dott.ssa Annachiara Lorusso" description={servizi.hero.description}>
+  <div class="section-band-muted">
+    <ServicesGrid
+      eyebrow={servizi.hero.eyebrow}
+      title={servizi.hero.title}
+      description={servizi.hero.description}
+      services={servizi.services}
+    />
+  </div>
+
+  <div class="section-band-contrast">
+    <AreasBento
+      sectionId="aree-di-intervento"
+      eyebrow={aree.hero.eyebrow}
+      title={aree.hero.title}
+      description={aree.hero.description}
+      items={aree.items}
+    />
+  </div>
+
+  <ServicesBookingSection
+    title={servizi.booking.title}
+    description={servizi.booking.description}
+    primaryCta={servizi.booking.primaryCta}
+    secondaryCta={servizi.booking.secondaryCta}
+  />
+</BaseLayout>

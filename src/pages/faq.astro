@@ -1,0 +1,30 @@
+---
+import CtaBanner from "../components/sections/CtaBanner.astro";
+import FaqAccordion from "../components/sections/FaqAccordion.astro";
+import FaqHero from "../components/sections/FaqHero.astro";
+import faq from "../content/site/faq.json";
+import site from "../content/site/site.json";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="FAQ | Dott.ssa Annachiara Lorusso" description={faq.hero.description}>
+  <div class="section-band-muted">
+    <FaqHero eyebrow={faq.hero.eyebrow} title={faq.hero.title} description={faq.hero.description} />
+  </div>
+
+  <section class="section-pad">
+    <div class="container-site">
+      <FaqAccordion items={faq.items} />
+    </div>
+  </section>
+
+  <CtaBanner
+    eyebrow="Hai altre domande?"
+    title="Contattami per un primo confronto"
+    description="Se non trovi qui la risposta che cerchi, scrivimi: rispondero con attenzione al tuo caso specifico."
+    primaryLabel="Apri modulo Google"
+    primaryHref={site.contactFormUrl}
+    secondaryLabel="WhatsApp"
+    secondaryHref={`https://wa.me/${site.whatsappNumber}`}
+  />
+</BaseLayout>

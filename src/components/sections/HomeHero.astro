@@ -1,0 +1,59 @@
+---
+import site from "../../content/site/site.json";
+
+interface Cta {
+  label: string;
+  href: string;
+}
+
+interface Props {
+  eyebrow: string;
+  title: string;
+  subtitle: string;
+  primaryCta: Cta;
+  secondaryCta: Cta;
+}
+
+const { eyebrow, title, subtitle, primaryCta, secondaryCta } = Astro.props;
+---
+
+<section class="section-pad bg-atmosphere-primary">
+  <div class="container-site">
+    <div class="grid items-center gap-8 lg:grid-cols-[1.08fr_0.92fr]">
+      <div class="card-soft-elevated card-highlight p-8 md:p-12">
+        <p class="section-eyebrow mb-3 reveal-fade">{eyebrow}</p>
+        <h1 class="reveal-fade-delay max-w-3xl font-headline text-4xl leading-tight text-on-surface md:text-6xl">{title}</h1>
+        <p class="mt-6 max-w-3xl text-lg leading-relaxed text-on-surface-variant">{subtitle}</p>
+        <div class="mt-10 flex flex-wrap gap-3">
+          <a href={primaryCta.href} class="btn-primary-hero">{primaryCta.label}</a>
+          <a href={secondaryCta.href} class="btn-secondary-hero">{secondaryCta.label}</a>
+        </div>
+      </div>
+
+      <div class="relative min-h-[320px] overflow-hidden rounded-[2rem] border border-white/60 bg-white/70 p-6 shadow-[0_24px_55px_rgba(89,74,107,0.18)] md:min-h-[380px] md:p-8">
+        <div class="floating-badge absolute right-4 top-4">Approccio integrato</div>
+        <div class="absolute -left-12 top-18 h-44 w-44 rounded-full bg-secondary/22 blur-2xl"></div>
+        <div class="absolute bottom-4 right-6 h-52 w-52 rounded-full bg-tertiary/20 blur-3xl"></div>
+        <div class="relative z-10 mt-16 space-y-4 md:mt-22">
+          <div class="mb-5 inline-flex items-center gap-4 rounded-3xl border border-outline-variant/35 bg-white/85 p-4 shadow-[0_14px_30px_rgba(103,88,120,0.18)]">
+            <img
+              src={site.brandImage}
+              alt={`Logo ${site.brandName}`}
+              width="68"
+              height="68"
+              loading="lazy"
+              decoding="async"
+              class="h-16 w-16 rounded-2xl border border-secondary/20 object-cover"
+            />
+            <span class="text-sm font-semibold uppercase tracking-[0.12em] text-secondary">Studio professionale</span>
+          </div>
+          <p class="text-sm font-semibold uppercase tracking-[0.14em] text-secondary">Percorsi personalizzati</p>
+          <p class="font-headline text-3xl leading-snug text-secondary md:text-4xl">Uno spazio professionale in cui sentirti accolto.</p>
+          <p class="max-w-md leading-relaxed text-on-surface-variant">
+            Interventi clinici orientati alla chiarezza, alla regolazione emotiva e a un cambiamento sostenibile nel quotidiano.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,22 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  privacyLabel: string;
+  submitLabel: string;
+  formUrl: string;
+}
+
+const { title, description, privacyLabel, submitLabel, formUrl } = Astro.props;
+---
+
+<div class="card-soft-elevated card-highlight border border-outline-variant/60 p-8 md:p-10">
+  <h2 class="font-headline text-3xl text-secondary">{title}</h2>
+  <p class="mt-4 leading-relaxed text-on-surface-variant">{description}</p>
+  <p class="mt-6 rounded-xl border border-outline-variant/50 bg-white/75 px-4 py-3 text-sm leading-relaxed text-on-surface-variant">
+    {privacyLabel}
+  </p>
+  <a href={formUrl} target="_blank" rel="noreferrer" class="btn-primary-hero mt-6">
+    {submitLabel}
+  </a>
+</div>

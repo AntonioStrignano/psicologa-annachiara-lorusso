@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "eyebrow": "FAQ",
+    "title": "Domande frequenti",
+    "description": "Risposte rapide ai dubbi più comuni prima di iniziare un percorso psicologico."
+  },
+  "items": [
+    {
+      "question": "Come funziona il primo colloquio?",
+      "answer": "Il primo incontro serve a conoscerci, chiarire il motivo della richiesta e definire insieme obiettivi e possibilità del percorso."
+    },
+    {
+      "question": "I colloqui sono online o in presenza?",
+      "answer": "Attualmente i colloqui sono online, con possibilità di seguire persone da tutta Italia."
+    },
+    {
+      "question": "A chi sono rivolti i percorsi?",
+      "answer": "I percorsi sono rivolti a bambini, adolescenti e genitori, con interventi differenziati in base all'età e al bisogno."
+    },
+    {
+      "question": "Posso contattarti prima di prenotare?",
+      "answer": "Si, puoi scrivere tramite modulo contatti o WhatsApp per una prima richiesta informativa."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "hero": {
+    "eyebrow": "Dott.ssa Annachiara Lorusso · Psicologa",
+    "title": "Psicologia per la crescita e il benessere",
+    "subtitle": "Un percorso su misura in cui sciogliere i nodi interiori, ritrovare equilibrio e tornare a sentirti te stessa, in ogni fase della vita.",
+    "primaryCta": {
+      "label": "Prenota un primo colloquio",
+      "href": "https://forms.gle/INSERISCI-LINK-GOOGLE-FORM"
+    },
+    "secondaryCta": {
+      "label": "Scrivimi su WhatsApp",
+      "href": "https://wa.me/393451234567"
+    }
+  },
+  "areas": {
+    "eyebrow": "Aree di intervento",
+    "title": "Percorsi per ogni fase della vita",
+    "description": "Percorsi pensati per accompagnare ogni età e ogni relazione familiare, con ascolto e senza giudizio.",
+    "ctaLabel": "Scopri servizi e aree",
+    "ctaHref": "/servizi#aree-di-intervento",
+    "items": [
+      {
+        "title": "Bambini",
+        "description": "Attraverso il gioco e la creatività, i più piccoli trovano un modo per dare voce a ciò che ancora non sanno spiegare a parole: emozioni, paure e piccole grandi difficoltà di ogni giorno."
+      },
+      {
+        "title": "Adolescenti",
+        "description": "Uno spazio tutto loro, libero da giudizi, dove attraversare i cambiamenti, le domande sull'identità e le relazioni che in questa età sembrano, e sono, enormi."
+      },
+      {
+        "title": "Genitori",
+        "description": "Essere genitori è il lavoro più bello e più difficile. Insieme rafforziamo la fiducia nelle tue scelte, miglioriamo la comunicazione e ritroviamo equilibrio e leggerezza in famiglia."
+      }
+    ]
+  },
+  "pillars": {
+    "eyebrow": "Il mio approccio",
+    "title": "Una relazione autentica, con basi scientifiche",
+    "description": "Credo in un ascolto autentico, dove ogni persona viene accolta nella sua interezza. Unisco tecniche basate sull'evidenza scientifica a una presenza umana e partecipe, per accompagnarti verso un cambiamento vero e che dura nel tempo.",
+    "items": [
+      "Empatia e ascolto senza giudizio.",
+      "Metodologie validate e aggiornamento continuo.",
+      "Percorsi personalizzati orientati all'autonomia."
+    ]
+  },
+  "instagram": {
+    "eyebrow": "Instagram",
+    "title": "Seguimi anche su Instagram",
+    "description": "Per ora il sito resta leggero con una card dedicata. Il widget live potrà essere valutato in una fase successiva.",
+    "ctaLabel": "Apri il profilo"
+  }
+}

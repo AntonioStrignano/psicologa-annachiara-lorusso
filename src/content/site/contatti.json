@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "eyebrow": "Contatti",
+    "title": "Richiedi un primo colloquio conoscitivo",
+    "description": "Se senti che è arrivato il momento di sciogliere un nodo, per te o per una persona a cui tieni, scrivimi. Il primo colloquio conoscitivo è un'occasione per conoscerci."
+  },
+  "info": {
+    "title": "Come preferisci contattarmi",
+    "description": "Puoi scegliere il canale più comodo: Google Form, email o WhatsApp. Ti risponderò nel minor tempo possibile."
+  },
+  "form": {
+    "title": "Compila il modulo Google",
+    "description": "Il pulsante apre il modulo in una nuova scheda. Appena invii la richiesta, ti ricontatto con le indicazioni per il primo colloquio.",
+    "privacyLabel": "Ho letto l'informativa privacy e acconsento al trattamento dei dati per essere ricontattata/o.",
+    "submitLabel": "Apri Google Form"
+  }
+}

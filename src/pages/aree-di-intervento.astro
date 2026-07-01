@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Aree di intervento | Reindirizzamento" description="Pagina unificata in Servizi e aree di intervento.">
+  <section class="section-pad">
+    <div class="container-site card-soft-elevated max-w-3xl border border-outline-variant/35 p-8 text-center md:p-10">
+      <h1 class="font-headline text-3xl text-secondary md:text-4xl">Pagina aggiornata</h1>
+      <p class="mt-4 leading-relaxed text-on-surface-variant">
+        La sezione Aree di intervento è stata accorpata alla pagina Servizi per un'esperienza più lineare.
+      </p>
+      <a href="/servizi#aree-di-intervento" class="btn-primary-hero mt-7">Vai a Servizi e aree</a>
+    </div>
+  </section>
+
+  <script>
+    if (typeof window !== "undefined") {
+      window.location.replace("/servizi#aree-di-intervento");
+    }
+  </script>
+</BaseLayout>

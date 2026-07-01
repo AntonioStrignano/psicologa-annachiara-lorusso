@@ -1,0 +1,33 @@
+---
+import ContactForm from "../components/sections/ContactForm.astro";
+import ContactsHero from "../components/sections/ContactsHero.astro";
+import ContactsInfoCard from "../components/sections/ContactsInfoCard.astro";
+import contatti from "../content/site/contatti.json";
+import site from "../content/site/site.json";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Contatti | Dott.ssa Annachiara Lorusso" description={contatti.hero.description}>
+  <div class="section-band-muted">
+    <ContactsHero eyebrow={contatti.hero.eyebrow} title={contatti.hero.title} description={contatti.hero.description} />
+  </div>
+
+  <section class="section-pad">
+    <div class="container-site grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
+      <ContactForm
+        title={contatti.form.title}
+        description={contatti.form.description}
+        privacyLabel={contatti.form.privacyLabel}
+        submitLabel={contatti.form.submitLabel}
+        formUrl={site.contactFormUrl}
+      />
+      <ContactsInfoCard
+        title={contatti.info.title}
+        description={contatti.info.description}
+        phone={site.phone}
+        email={site.email}
+        whatsappNumber={site.whatsappNumber}
+      />
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,28 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  phone: string;
+  email: string;
+  whatsappNumber: string;
+}
+
+const { title, description, phone, email, whatsappNumber } = Astro.props;
+---
+
+<aside class="card-soft-elevated border border-outline-variant/45 p-8 md:p-10">
+  <p class="floating-badge mb-4">Privacy e riservatezza</p>
+  <h2 class="font-headline text-3xl text-secondary">{title}</h2>
+  <p class="mt-4 leading-relaxed text-on-surface-variant">{description}</p>
+  <ul class="mt-8 space-y-3 text-on-surface-variant">
+    <li>
+      <a href={`tel:${phone.replace(/\s+/g, "")}`} class="font-medium transition-colors hover:text-tertiary">{phone}</a>
+    </li>
+    <li>
+      <a href={`mailto:${email}`} class="font-medium transition-colors hover:text-tertiary">{email}</a>
+    </li>
+    <li>
+      <a href={`https://wa.me/${whatsappNumber}`} class="font-medium transition-colors hover:text-tertiary">WhatsApp</a>
+    </li>
+  </ul>
+</aside>

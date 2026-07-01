@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "eyebrow": "Servizi",
+    "title": "Supporto psicologico per bambini, adolescenti e genitori",
+    "description": "Percorsi personalizzati online, orientati al benessere emotivo e relazionale, con attenzione alla specificità di ogni storia."
+  },
+  "services": [
+    {
+      "title": "Colloqui per bambini",
+      "description": "Interventi calibrati sull'età evolutiva, con strumenti adatti a favorire espressione emotiva e regolazione."
+    },
+    {
+      "title": "Colloqui per adolescenti",
+      "description": "Uno spazio di ascolto per affrontare cambiamenti, ansia, autostima, relazioni e orientamento personale."
+    },
+    {
+      "title": "Sostegno alla genitorialita",
+      "description": "Percorsi per migliorare comunicazione, gestione dei conflitti e clima familiare nel quotidiano."
+    }
+  ],
+  "booking": {
+    "title": "Primo colloquio conoscitivo",
+    "description": "Il primo incontro aiuta a chiarire il bisogno, definire gli obiettivi e valutare insieme il percorso più adatto.",
+    "primaryCta": {
+      "label": "Richiedi un appuntamento",
+      "href": "https://forms.gle/INSERISCI-LINK-GOOGLE-FORM"
+    },
+    "secondaryCta": {
+      "label": "Contattami su WhatsApp",
+      "href": "https://wa.me/393451234567"
+    }
+  }
+}

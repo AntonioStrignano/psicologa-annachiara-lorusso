@@ -1,0 +1,28 @@
+{
+  "brandName": "Dott.ssa Annachiara Lorusso",
+  "profession": "Psicologa Clinica",
+  "brandImage": "/brand/logo-annachiara.jpg",
+  "phone": "+39 345 123 4567",
+  "email": "info@annachiaralorusso.it",
+  "whatsappNumber": "393451234567",
+  "contactFormUrl": "https://forms.gle/INSERISCI-LINK-GOOGLE-FORM",
+  "instagramUrl": "https://www.instagram.com/igrovigliinteriori_psicologia/",
+  "legalLinks": [
+    {
+      "label": "Privacy Policy",
+      "href": "/privacy-policy"
+    },
+    {
+      "label": "Cookie Policy",
+      "href": "/cookie-policy"
+    },
+    {
+      "label": "Note Legali",
+      "href": "/note-legali"
+    },
+    {
+      "label": "Mappa del Sito",
+      "href": "/mappa-del-sito"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+[
+  { "label": "Home", "href": "/" },
+  { "label": "Chi sono", "href": "/chi-sono" },
+  { "label": "Servizi", "href": "/servizi" },
+  { "label": "FAQ", "href": "/faq" },
+  { "label": "Contatti", "href": "/contatti" }
+]
