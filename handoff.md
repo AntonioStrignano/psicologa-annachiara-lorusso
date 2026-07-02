@@ -1,7 +1,7 @@
 # Handoff operativo
 
 ## Data
-2026-07-01
+2026-07-02
 
 ## Modifiche effettuate
 - Inizializzata struttura repository per sito vetrina.
@@ -106,6 +106,19 @@
 - Hero Contatti resa piu compatta tramite nuovo spacing `section-pad-compact`.
 - Pagina Servizi: blocco "Ambiti di lavoro" convertito in variante lista editoriale (piu lineare, meno card-centric), mantenendo estetica generale del brand.
 - `AreasBento` ora supporta due varianti (`cards` e `list`) per adattare la presentazione in base al contesto pagina.
+- Accorpati i contenuti di "Aree di intervento" dentro `src/content/site/servizi.json` (unica sorgente dati per la pagina Servizi).
+- Pagina `src/pages/servizi.astro` semplificata: rimosso import di `aree.json`, ora legge sia servizi sia aree da `servizi.json`.
+- Rimossi file legacy non necessari in `src`: eliminati `src/content/site/aree.json` e `src/pages/aree-di-intervento.astro`.
+- Introdotto redirect in `astro.config.mjs` da `/aree-di-intervento` a `/servizi#aree-di-intervento` per mantenere compatibilita URL.
+- Build di validazione post-accorpamento completata con successo.
+- Aggiornato copy Hero Home sotto al titolo con nuovo testo cliente sul benessere psicologico come riscoperta di se.
+- Aggiornato il contenuto del secondo blocco Hero Home: rimosso riferimento ad "approccio integrato" e inserito nuovo testo cliente su spazio sicuro, ascolto e fiducia.
+- Aggiunta card "Adulti" nella sezione aree in Home con il testo cliente richiesto.
+- Aggiunto servizio "Colloqui per adulti" nella pagina Servizi con lo stesso testo cliente richiesto.
+- Aggiornati componenti `HomeHero`, `HomeAreasCards` e `ServicesGrid` per supportare correttamente i nuovi contenuti e il layout a 4 card.
+- Build di validazione post-modifiche cliente completata con successo.
+- Eseguito pass di correzione ortografia/accènti su copy Home e Servizi (es. età, identità, genitorialità, difficoltà, sé, È, potrà).
+- Build di validazione post-correzioni linguistiche completata con successo.
 
 ## Stato attuale
 - Repository pronta per ricevere il PDF dell'intervista.
@@ -128,9 +141,10 @@
 - Sito ora con resa piu atmosferica/editoriale e interazioni leggere coerenti, mantenendo struttura Astro componentizzata e contenuti JSON data-driven.
 - Palette visiva ora piu equilibrata tra verde istituzionale, lavanda e sabbia, con riduzione dell'effetto monocromatico.
 - Presenza visuale del brand (logo/foto) ora effettivamente visibile in testata e hero Home.
+- Struttura `src` ripulita rispetto all'accorpamento "Servizi + Aree": una sola sorgente contenuti e niente duplicati legacy.
 
 ## Prossime azioni
 1. Sostituire il placeholder contactFormUrl con il link reale del Google Form pubblicato.
 2. Verificare e validare dati professionali definitivi (telefono, email, albo, eventuale P.IVA).
-3. Eseguire passata QA visuale manuale su mobile/desktop (home, servizi, aree, chi sono, faq, contatti) con eventuale fine tuning micro-spaziature.
+3. Eseguire passata QA visuale manuale su mobile/desktop (home, servizi, chi sono, faq, contatti + redirect legacy aree) con eventuale fine tuning micro-spaziature.
 4. Pianificare pagine legali in coda post-MVP.

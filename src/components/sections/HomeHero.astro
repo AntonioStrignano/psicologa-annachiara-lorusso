@@ -10,11 +10,23 @@ interface Props {
   eyebrow: string;
   title: string;
   subtitle: string;
+  focusEyebrow?: string;
+  focusTitle?: string;
+  focusDescription?: string;
   primaryCta: Cta;
   secondaryCta: Cta;
 }
 
-const { eyebrow, title, subtitle, primaryCta, secondaryCta } = Astro.props;
+const {
+  eyebrow,
+  title,
+  subtitle,
+  focusEyebrow = "Percorsi personalizzati",
+  focusTitle = "Uno spazio professionale in cui sentirti accolto.",
+  focusDescription = "Interventi clinici orientati alla chiarezza, alla regolazione emotiva e a un cambiamento sostenibile nel quotidiano.",
+  primaryCta,
+  secondaryCta,
+} = Astro.props;
 ---
 
 <section class="section-pad bg-atmosphere-primary">
@@ -31,7 +43,6 @@ const { eyebrow, title, subtitle, primaryCta, secondaryCta } = Astro.props;
       </div>
 
       <div class="relative min-h-[320px] overflow-hidden rounded-[2rem] border border-white/60 bg-white/70 p-6 shadow-[0_24px_55px_rgba(89,74,107,0.18)] md:min-h-[380px] md:p-8">
-        <div class="floating-badge absolute right-4 top-4">Approccio integrato</div>
         <div class="absolute -left-12 top-18 h-44 w-44 rounded-full bg-secondary/22 blur-2xl"></div>
         <div class="absolute bottom-4 right-6 h-52 w-52 rounded-full bg-tertiary/20 blur-3xl"></div>
         <div class="relative z-10 mt-16 space-y-4 md:mt-22">
@@ -47,10 +58,10 @@ const { eyebrow, title, subtitle, primaryCta, secondaryCta } = Astro.props;
             />
             <span class="text-sm font-semibold uppercase tracking-[0.12em] text-secondary">Studio professionale</span>
           </div>
-          <p class="text-sm font-semibold uppercase tracking-[0.14em] text-secondary">Percorsi personalizzati</p>
-          <p class="font-headline text-3xl leading-snug text-secondary md:text-4xl">Uno spazio professionale in cui sentirti accolto.</p>
+          <p class="text-sm font-semibold uppercase tracking-[0.14em] text-secondary">{focusEyebrow}</p>
+          <p class="font-headline text-3xl leading-snug text-secondary md:text-4xl">{focusTitle}</p>
           <p class="max-w-md leading-relaxed text-on-surface-variant">
-            Interventi clinici orientati alla chiarezza, alla regolazione emotiva e a un cambiamento sostenibile nel quotidiano.
+            {focusDescription}
           </p>
         </div>
       </div>

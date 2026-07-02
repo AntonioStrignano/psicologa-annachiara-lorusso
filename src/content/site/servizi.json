@@ -14,10 +14,45 @@
       "description": "Uno spazio di ascolto per affrontare cambiamenti, ansia, autostima, relazioni e orientamento personale."
     },
     {
-      "title": "Sostegno alla genitorialita",
+      "title": "Sostegno alla genitorialità",
       "description": "Percorsi per migliorare comunicazione, gestione dei conflitti e clima familiare nel quotidiano."
+    },
+    {
+      "title": "Colloqui per adulti",
+      "description": "Uno spazio di ascolto e cura per affrontare ansia, stress, difficoltà relazionali, cambiamenti di vita e momenti di sofferenza. Insieme costruiremo un percorso orientato alla comprensione di sé, al benessere emotivo e alla crescita personale."
     }
   ],
+  "areas": {
+    "eyebrow": "Aree di intervento",
+    "title": "Ambiti di lavoro principali",
+    "description": "Un accompagnamento clinico attento alle diverse fasi della vita e ai contesti relazionali in cui emergono i disagi.",
+    "items": [
+      {
+        "title": "Ansia e stress",
+        "description": "Gestione di preoccupazioni persistenti, sovraccarico emotivo e difficoltà nel recuperare equilibrio."
+      },
+      {
+        "title": "Autostima e identità",
+        "description": "Percorsi per riconoscere risorse personali, rafforzare sicurezza interna e consolidare senso di sé."
+      },
+      {
+        "title": "Relazioni e conflitti",
+        "description": "Supporto nelle dinamiche familiari, amicali o di coppia, con focus su comunicazione e confini."
+      },
+      {
+        "title": "Genitorialità",
+        "description": "Interventi per affrontare fatiche educative, fasi di transizione e bisogni emotivi dei figli."
+      },
+      {
+        "title": "Difficoltà adolescenziali",
+        "description": "Sostegno per vissuti di disorientamento, ritiro, pressione scolastica e cambiamenti evolutivi."
+      },
+      {
+        "title": "Disagio emotivo",
+        "description": "Percorsi rivolti a tristezza, demotivazione e stati depressivi, con un lavoro graduale e condiviso."
+      }
+    ]
+  },
   "booking": {
     "title": "Primo colloquio conoscitivo",
     "description": "Il primo incontro aiuta a chiarire il bisogno, definire gli obiettivi e valutare insieme il percorso più adatto.",

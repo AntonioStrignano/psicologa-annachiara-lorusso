@@ -3,7 +3,6 @@ import ServicesBookingSection from "../components/sections/ServicesBookingSectio
 import ServicesGrid from "../components/sections/ServicesGrid.astro";
 import AreasBento from "../components/sections/AreasBento.astro";
 import servizi from "../content/site/servizi.json";
-import aree from "../content/site/aree.json";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
@@ -21,10 +20,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <AreasBento
       sectionId="aree-di-intervento"
       variant="list"
-      eyebrow={aree.hero.eyebrow}
-      title={aree.hero.title}
-      description={aree.hero.description}
-      items={aree.items}
+      eyebrow={servizi.areas.eyebrow}
+      title={servizi.areas.title}
+      description={servizi.areas.description}
+      items={servizi.areas.items}
     />
   </div>
 

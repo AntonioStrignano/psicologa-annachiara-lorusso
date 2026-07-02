@@ -2,7 +2,10 @@
   "hero": {
     "eyebrow": "Dott.ssa Annachiara Lorusso · Psicologa",
     "title": "Psicologia per la crescita e il benessere",
-    "subtitle": "Un percorso su misura in cui sciogliere i nodi interiori, ritrovare equilibrio e tornare a sentirti te stessa, in ogni fase della vita.",
+    "subtitle": "Per me il benessere psicologico non è semplicemente \"stare meglio\", ma riscoprirsi: diventare consapevoli di chi siamo e tornare a fiorire. Nel mio lavoro tengo insieme due cose che ritengo inseparabili: il calore della relazione umana e la solidità della scienza psicologica.",
+    "focusEyebrow": "Ascolto e fiducia",
+    "focusTitle": "Tutto comincia da uno spazio sicuro, dove poterti raccontare senza paura di essere giudicato.",
+    "focusDescription": "È da questo ascolto, sincero e attento, che nasce la fiducia su cui costruiamo il percorso.",
     "primaryCta": {
       "label": "Prenota un primo colloquio",
       "href": "https://forms.gle/INSERISCI-LINK-GOOGLE-FORM"
@@ -30,6 +33,10 @@
       {
         "title": "Genitori",
         "description": "Essere genitori è il lavoro più bello e più difficile. Insieme rafforziamo la fiducia nelle tue scelte, miglioriamo la comunicazione e ritroviamo equilibrio e leggerezza in famiglia."
+      },
+      {
+        "title": "Adulti",
+        "description": "Uno spazio di ascolto e cura per affrontare ansia, stress, difficoltà relazionali, cambiamenti di vita e momenti di sofferenza. Insieme costruiremo un percorso orientato alla comprensione di sé, al benessere emotivo e alla crescita personale."
       }
     ]
   },
