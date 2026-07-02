@@ -119,6 +119,13 @@
 - Build di validazione post-modifiche cliente completata con successo.
 - Eseguito pass di correzione ortografia/accènti su copy Home e Servizi (es. età, identità, genitorialità, difficoltà, sé, È, potrà).
 - Build di validazione post-correzioni linguistiche completata con successo.
+- Aggiornata favicon globale: ora il sito usa il logo brand in `public/brand/logo-annachiara.jpg` come icona tab/browser.
+- Favicon rifatta usando il simbolo estratto da `public/simbolo colori.pdf` (`public/brand/logo-symbol-raw.png`).
+- Applicato sfondo bianco circolare nella favicon (SVG) per garantire leggibilita anche quando il simbolo ha parti trasparenti.
+- Correzione favicon: impostata come primaria la versione raster `public/favicon.png` (logo a colori + base bianca circolare), evitando il rendering incompleto visto con SVG in tab browser.
+- Rifinita integrazione favicon per compatibilita browser: creati asset dedicati `favicon-32x32.png`, `favicon-192x192.png`, `apple-touch-icon.png` e aggiornati i tag in layout con cache-busting (`?v=2`).
+- Attivate le nuove favicon come icone ufficiali del sito nel layout globale e incrementato cache-busting a `?v=3` per forzare l'aggiornamento nei browser.
+- Aggiunto fallback favicon SVG (`/favicon.svg?v=3`) nei tag head globali, mantenendo PNG/ICO come riferimenti principali cross-browser.
 
 ## Stato attuale
 - Repository pronta per ricevere il PDF dell'intervista.
