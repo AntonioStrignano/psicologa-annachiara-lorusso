@@ -328,8 +328,7 @@
 		background: #ffffff;
 		box-shadow: var(--shadow-soft-strong);
 		height: auto;
-		min-height: clamp(7.5rem, 9vw, 9rem);
-		max-height: clamp(8.5rem, 10vw, 9.5rem);
+		min-height: clamp(12rem, 20vw, 16rem);
 		align-self: start;
 	}
 
@@ -347,6 +346,27 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+		object-position: center;
+	}
+
+	.media-h-md {
+		min-height: clamp(13.5rem, 22vw, 18rem);
+	}
+
+	.media-h-sm {
+		min-height: clamp(7rem, 11vw, 9rem);
+	}
+
+	.media-h-lg {
+		min-height: clamp(15rem, 25vw, 21rem);
+	}
+
+	.media-cover-top img {
+		object-position: center top;
+	}
+
+	.media-cover-bottom img {
+		object-position: center bottom;
 	}
 
 	.card-media::after {

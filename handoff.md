@@ -1,7 +1,7 @@
 # Handoff operativo
 
 ## Data
-2026-07-02
+2026-07-22
 
 ## Modifiche effettuate
 - Inizializzata struttura repository per sito vetrina.
@@ -126,6 +126,29 @@
 - Rifinita integrazione favicon per compatibilita browser: creati asset dedicati `favicon-32x32.png`, `favicon-192x192.png`, `apple-touch-icon.png` e aggiornati i tag in layout con cache-busting (`?v=2`).
 - Attivate le nuove favicon come icone ufficiali del sito nel layout globale e incrementato cache-busting a `?v=3` per forzare l'aggiornamento nei browser.
 - Aggiunto fallback favicon SVG (`/favicon.svg?v=3`) nei tag head globali, mantenendo PNG/ICO come riferimenti principali cross-browser.
+- Integrato il portrait cliente in `public/img/portrait.jpeg` come asset fotografico principale.
+- Aggiunta nuova chiave dati `portraitImage` in `src/content/site/site.json` per separare logo istituzionale e foto ritratto.
+- Sostituiti i placeholder foto basati su logo nelle sezioni HomeHero, HomeAreasCards, ServicesGrid, AboutPillars e AreasBento con il portrait reale.
+- Aggiunti path immagine dedicati in `src/content/site/site.json` per Home Aree, Servizi e Aree di intervento (`homeAreasImage`, `servicesImage`, `areasInterventoImagePrimary`, `areasInterventoImageSecondary`).
+- Collegati i nuovi asset di sezione nei componenti: `HomeAreasCards`, `ServicesGrid`, `AreasBento`.
+- Creata pagina `src/pages/riconoscimenti-foto.astro` con attribuzioni sorgenti immagini (Pexels) e nota sul portrait fornito dalla cliente.
+- Inserito link discreto "Crediti foto" nel footer globale verso `/riconoscimenti-foto`.
+- Rifinite le card immagine per leggibilita contenuto: altezze aumentate e gestione focal point con utility globali (`media-h-md`, `media-h-lg`, `media-cover-top`, `media-cover-bottom`).
+- Home Hero: portrait ingrandito nel visual block per aumentare presenza e riconoscibilita.
+- Home Aree e Servizi: immagini vincolate a `cover` con focus basso (`object-position: bottom`) per evitare tagli su elementi importanti.
+- Chi sono: portrait card resa piu alta con focus alto (`object-position: top`) per evitare il taglio del volto.
+- Aree di intervento (equilibrio/crescita): entrambe le card media rese piu alte per evitare l'effetto "striscia".
+- Fine tuning su feedback visuale: Home Aree ridotta in altezza e riallineata in alto (focus top).
+- Home Hero: portrait ulteriormente ingrandito per maggiore leggibilita nel visual.
+- Servizi/Aree (equilibrio): card immagine ridotta in altezza e larghezza per riequilibrio con i contenuti testuali.
+- Rollback ultimo taglio eccessivo su Home Aree: ripristinata dimensione `media-h-sm` con focus top per mantenere compattezza senza effetto miniatura.
+- Header mobile ripulito in layout a 3 zone: logo a sinistra, brand/professione centrati, icona hamburger a destra.
+- Rimossa CTA "Prenota" dalla testata (desktop e mobile) per ridurre ingombro verticale e rumore visivo.
+- Header desktop riallineato con griglia a tre colonne per mantenere il menu nav centrato rispetto al brand e all'azione WhatsApp.
+- Aggiornato numero WhatsApp cliente in configurazione sito: `whatsappNumber` ora impostato a `393341399292` (da input: 334 139 9292).
+- Aggiornate le CTA di fondo pagina con schema a doppio pulsante: priorita al modulo (primario) e Instagram come azione secondaria.
+- Home CTA Instagram rivista con copy piu caldo (rimossi riferimenti placeholder tecnici) e inversione priorita pulsanti (modulo prima, Instagram dopo).
+- Allineate CTA finali di Chi sono, FAQ e prenotazioni Servizi: pulsante secondario ora punta a Instagram (`igrovigliinteriori_psicologia`).
 
 ## Stato attuale
 - Repository pronta per ricevere il PDF dell'intervista.
@@ -149,9 +172,13 @@
 - Palette visiva ora piu equilibrata tra verde istituzionale, lavanda e sabbia, con riduzione dell'effetto monocromatico.
 - Presenza visuale del brand (logo/foto) ora effettivamente visibile in testata e hero Home.
 - Struttura `src` ripulita rispetto all'accorpamento "Servizi + Aree": una sola sorgente contenuti e niente duplicati legacy.
+- Placeholder fotografici principali sostituiti con il ritratto reale di Annachiara, mantenendo il logo solo nei punti identitari (header/brand).
+- Struttura pronta per sostituzione graduale delle immagini stock per sezione senza toccare i componenti (solo aggiornando i path in `site.json`).
+- Header ora piu compatto su viewport mobile, con gerarchia piu chiara e maggiore spazio utile al contenuto above-the-fold.
 
 ## Prossime azioni
 1. Sostituire il placeholder contactFormUrl con il link reale del Google Form pubblicato.
 2. Verificare e validare dati professionali definitivi (telefono, email, albo, eventuale P.IVA).
 3. Eseguire passata QA visuale manuale su mobile/desktop (home, servizi, chi sono, faq, contatti + redirect legacy aree) con eventuale fine tuning micro-spaziature.
 4. Pianificare pagine legali in coda post-MVP.
+5. Scaricare e inserire in `public/img` i file `home-aree.jpg`, `servizi.jpg`, `aree-intervento-1.jpg`, `aree-intervento-2.jpg` mantenendo i nomi concordati.
