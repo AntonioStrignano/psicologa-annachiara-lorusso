@@ -27,3 +27,5 @@ Costruire una base solida per:
 
 ## Prossimo step
 Consolidare architettura pagine e passare alla bozza wireframe/copy per Home, Chi sono, Servizi, Aree di intervento, FAQ, Contatti.
+
+.
