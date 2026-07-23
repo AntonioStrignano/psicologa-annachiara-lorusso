@@ -152,6 +152,7 @@
 - Aggiornati i copy di Servizi e FAQ per includere gli adulti, specificare colloqui online e in presenza, e correggere l'ortografia di "Sì".
 - Aggiornato il workflow GitHub Actions per deployare `dist/` in `/public_html/` su cPanel e allineare Node alla versione richiesta dal progetto.
 - Corretto il repository dell'action FTP nel workflow: ora usa `SamKirkland/FTP-Deploy-Action@v4.3.5`.
+- Aggiornato `server-dir` del workflow a `/` per evitare la creazione di `public_html` annidata nel deploy FTP.
 
 ## Stato attuale
 - Repository pronta per ricevere il PDF dell'intervista.
