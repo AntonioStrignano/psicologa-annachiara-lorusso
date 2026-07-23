@@ -150,6 +150,7 @@
 - Home CTA Instagram rivista con copy piu caldo (rimossi riferimenti placeholder tecnici) e inversione priorita pulsanti (modulo prima, Instagram dopo).
 - Allineate CTA finali di Chi sono, FAQ e prenotazioni Servizi: pulsante secondario ora punta a Instagram (`igrovigliinteriori_psicologia`).
 - Aggiornati i copy di Servizi e FAQ per includere gli adulti, specificare colloqui online e in presenza, e correggere l'ortografia di "Sì".
+- Aggiornato il workflow GitHub Actions per deployare `dist/` in `/public_html/` su cPanel e allineare Node alla versione richiesta dal progetto.
 
 ## Stato attuale
 - Repository pronta per ricevere il PDF dell'intervista.
