@@ -1,7 +1,7 @@
 # Handoff operativo
 
 ## Data
-2026-07-22
+2026-07-23
 
 ## Modifiche effettuate
 - Inizializzata struttura repository per sito vetrina.
@@ -149,6 +149,7 @@
 - Aggiornate le CTA di fondo pagina con schema a doppio pulsante: priorita al modulo (primario) e Instagram come azione secondaria.
 - Home CTA Instagram rivista con copy piu caldo (rimossi riferimenti placeholder tecnici) e inversione priorita pulsanti (modulo prima, Instagram dopo).
 - Allineate CTA finali di Chi sono, FAQ e prenotazioni Servizi: pulsante secondario ora punta a Instagram (`igrovigliinteriori_psicologia`).
+- Aggiornati i copy di Servizi e FAQ per includere gli adulti, specificare colloqui online e in presenza, e correggere l'ortografia di "Sì".
 
 ## Stato attuale
 - Repository pronta per ricevere il PDF dell'intervista.
