@@ -124,11 +124,11 @@
 	}
 
 	.section-pad {
-		padding-block: clamp(5rem, 8vw, 7.5rem);
+		padding-block: clamp(2.2rem, 4.2vw, 3.2rem);
 	}
 
 	.section-pad-compact {
-		padding-block: clamp(3rem, 5vw, 4.35rem);
+		padding-block: clamp(1.4rem, 2.8vw, 2.1rem);
 	}
 
 	.card-soft {

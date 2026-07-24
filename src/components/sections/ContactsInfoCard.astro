@@ -22,7 +22,7 @@ const { title, description, phone, email, whatsappNumber } = Astro.props;
       <a href={`mailto:${email}`} class="font-medium transition-colors hover:text-tertiary">{email}</a>
     </li>
     <li>
-      <a href={`https://wa.me/${whatsappNumber}`} class="font-medium transition-colors hover:text-tertiary">WhatsApp</a>
+      <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" class="font-medium transition-colors hover:text-tertiary">WhatsApp</a>
     </li>
   </ul>
 </aside>

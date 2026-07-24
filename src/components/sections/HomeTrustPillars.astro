@@ -14,7 +14,7 @@ const { eyebrow, title, description, items } = Astro.props;
 <section class="section-pad section-band-lilac-soft">
   <div class="container-site">
     <SectionHeading eyebrow={eyebrow} title={title} description={description} />
-    <ul class="mt-8 grid gap-4 md:grid-cols-3">
+    <ul class="mt-5 grid gap-3 md:grid-cols-3">
       {items.map((item, index) => (
         <li class:list={[
           "card-soft-elevated interactive-lift border border-outline-variant/35 p-5 text-on-surface-variant",

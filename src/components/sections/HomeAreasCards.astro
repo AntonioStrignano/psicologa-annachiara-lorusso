@@ -22,7 +22,7 @@ const { eyebrow, title, description, items, ctaLabel, ctaHref } = Astro.props;
 <section class="section-pad section-band-cream">
   <div class="container-site">
     <SectionHeading eyebrow={eyebrow} title={title} description={description} />
-    <div class="cards-equal-layout mt-10 grid gap-5 md:grid-cols-6">
+    <div class="cards-equal-layout mt-6 grid gap-4 md:grid-cols-6">
       {items.map((item, index) => (
         <article
           class:list={[
@@ -45,7 +45,7 @@ const { eyebrow, title, description, items, ctaLabel, ctaHref } = Astro.props;
     </div>
 
     {ctaLabel && ctaHref && (
-      <div class="mt-10 flex justify-center">
+      <div class="mt-6 flex justify-center">
         <a href={ctaHref} class="btn-secondary-hero">
           {ctaLabel}
         </a>

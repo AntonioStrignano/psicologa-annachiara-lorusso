@@ -23,7 +23,7 @@ const { eyebrow, title, description, items, sectionId, variant = "cards" } = Ast
   <div class="container-site">
     <SectionHeading eyebrow={eyebrow} title={title} description={description} />
     {variant === "list" ? (
-      <div class="mt-10 grid gap-4 lg:grid-cols-2">
+      <div class="mt-6 grid gap-3 lg:grid-cols-2">
         {items.map((item, index) => (
           <article class="card-soft-elevated interactive-lift rounded-3xl border border-outline-variant/35 p-5">
             <div class="flex items-start gap-4">
@@ -44,7 +44,7 @@ const { eyebrow, title, description, items, sectionId, variant = "cards" } = Ast
         </article>
       </div>
     ) : (
-      <div class="cards-equal-layout mt-10 grid gap-5 md:grid-cols-6">
+      <div class="cards-equal-layout mt-6 grid gap-4 md:grid-cols-6">
         {items.map((item, index) => (
           <article class:list={[
             "card-soft-elevated card-uniform interactive-lift rounded-3xl border border-outline-variant/35 p-6",

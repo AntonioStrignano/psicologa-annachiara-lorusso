@@ -1,0 +1,83 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import site from "../content/site/site.json";
+
+const lastUpdated = "24 luglio 2026";
+---
+
+<BaseLayout
+  title="Cookie Policy | Dott.ssa Annachiara Lorusso"
+  description="Informazioni su cookie e tecnologie simili utilizzate dal sito."
+>
+  <section class="section-pad">
+    <div class="container-site max-w-4xl">
+      <p class="section-eyebrow mb-3">Informativa cookie</p>
+      <h1 class="font-headline text-4xl leading-tight text-secondary md:text-5xl">Cookie Policy</h1>
+      <p class="mt-3 leading-relaxed text-on-surface-variant">
+        Questa informativa spiega come vengono utilizzati i cookie e tecnologie simili quando navighi su questo sito.
+      </p>
+      <p class="mt-2 text-sm text-on-surface-variant/85">Ultimo aggiornamento: {lastUpdated}</p>
+
+      <div class="mt-6 space-y-4">
+        <section class="card-soft-elevated rounded-2xl border border-outline-variant/35 p-5 md:p-6">
+          <h2 class="font-headline text-2xl text-secondary">1. Cosa sono i cookie</h2>
+          <p class="mt-2 leading-relaxed text-on-surface-variant">
+            I cookie sono piccoli file di testo che i siti inviano al dispositivo dell'utente per migliorare l'esperienza di navigazione,
+            abilitare funzionalità tecniche e, in alcuni casi, raccogliere statistiche o personalizzare contenuti.
+          </p>
+        </section>
+
+        <section class="card-soft-elevated rounded-2xl border border-outline-variant/35 p-5 md:p-6">
+          <h2 class="font-headline text-2xl text-secondary">2. Cookie utilizzati da questo sito</h2>
+          <p class="mt-2 leading-relaxed text-on-surface-variant">
+            Il sito è realizzato come vetrina informativa statica e, allo stato attuale, utilizza solo cookie tecnici strettamente necessari
+            al funzionamento del servizio (es. cookie gestiti dal browser o dall'infrastruttura di hosting).
+          </p>
+          <p class="mt-2 leading-relaxed text-on-surface-variant">
+            Non vengono installati cookie di profilazione proprietari né cookie analytics proprietari.
+          </p>
+        </section>
+
+        <section class="card-soft-elevated rounded-2xl border border-outline-variant/35 p-5 md:p-6">
+          <h2 class="font-headline text-2xl text-secondary">3. Servizi di terze parti raggiungibili dal sito</h2>
+          <p class="mt-2 leading-relaxed text-on-surface-variant">
+            Il sito contiene collegamenti verso piattaforme esterne (ad esempio Google Forms, WhatsApp, Instagram).
+            L'eventuale trattamento dati e l'installazione di cookie da parte di tali servizi avviene solo dopo l'azione volontaria
+            dell'utente che apre i relativi link.
+          </p>
+          <p class="mt-2 leading-relaxed text-on-surface-variant">
+            Per maggiori informazioni si rinvia alle rispettive informative privacy/cookie dei singoli fornitori.
+          </p>
+        </section>
+
+        <section class="card-soft-elevated rounded-2xl border border-outline-variant/35 p-5 md:p-6">
+          <h2 class="font-headline text-2xl text-secondary">4. Gestione dei cookie dal browser</h2>
+          <p class="mt-2 leading-relaxed text-on-surface-variant">
+            Puoi gestire, bloccare o cancellare i cookie direttamente dalle impostazioni del tuo browser.
+            La disattivazione dei cookie tecnici può influire sul corretto funzionamento di alcune funzionalità del sito.
+          </p>
+        </section>
+
+        <section class="card-soft-elevated rounded-2xl border border-outline-variant/35 p-5 md:p-6">
+          <h2 class="font-headline text-2xl text-secondary">5. Contatti</h2>
+          <p class="mt-2 leading-relaxed text-on-surface-variant">
+            Per richieste relative a questa Cookie Policy puoi contattare il Titolare all'indirizzo
+            <a href={`mailto:${site.email}`} class="font-semibold text-secondary underline decoration-secondary/40 underline-offset-4"> {site.email}</a>.
+          </p>
+          <p class="mt-2 leading-relaxed text-on-surface-variant">
+            Per informazioni generali sul trattamento dei dati personali, consulta anche la
+            <a href="/privacy-policy" class="font-semibold text-secondary underline decoration-secondary/40 underline-offset-4"> Privacy Policy</a>.
+          </p>
+        </section>
+
+        <section class="card-soft-elevated rounded-2xl border border-outline-variant/35 p-5 md:p-6">
+          <h2 class="font-headline text-2xl text-secondary">6. Aggiornamenti della policy</h2>
+          <p class="mt-2 leading-relaxed text-on-surface-variant">
+            La presente Cookie Policy può essere aggiornata nel tempo per adeguamenti normativi o tecnici.
+            Le modifiche saranno pubblicate su questa pagina con data di aggiornamento.
+          </p>
+        </section>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

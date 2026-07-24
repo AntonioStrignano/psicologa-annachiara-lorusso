@@ -153,6 +153,12 @@
 - Aggiornato il workflow GitHub Actions per deployare `dist/` in `/public_html/` su cPanel e allineare Node alla versione richiesta dal progetto.
 - Corretto il repository dell'action FTP nel workflow: ora usa `SamKirkland/FTP-Deploy-Action@v4.3.5`.
 - Aggiornato `server-dir` del workflow a `/` per evitare la creazione di `public_html` annidata nel deploy FTP.
+- Aggiornata timeline "Percorso professionale" nella pagina Chi sono con tre tappe: Laurea Magistrale in Psicologia Clinica (20 dicembre 2024), Iscrizione all'Ordine degli Psicologi della Puglia n. 9338, Master in Terapia e Prevenzione dei Disturbi dell'Alimentazione e dell'Obesita (a.a. 2025/2026).
+- Sostituito il placeholder del modulo contatti con il link Google Form definitivo in `src/content/site/site.json` (`contactFormUrl`: https://forms.gle/6bDe6Qyv1rVpPy826).
+- Implementate sitemap e robots: aggiunta integrazione `@astrojs/sitemap`, impostato `site` in `astro.config.mjs` su `https://annachiaralorusso.it` e creato `public/robots.txt` con riferimento a `sitemap-index.xml`.
+- Impostata apertura in nuova scheda per tutti i link a Google Form, Instagram e WhatsApp (target `_blank` + `rel="noopener noreferrer"`) nei componenti CTA e nei link contatto.
+- Ridotte drasticamente le spaziature verticali globali (padding sezione e margini top) e compattati Hero, CTA banner, timeline, griglie card e footer per ottenere una pagina piu densa e meno alta.
+- Create e pubblicate le pagine legali operative `src/pages/privacy-policy.astro` e `src/pages/cookie-policy.astro`, integrate nel layout globale e allineate ai link footer gia presenti.
 
 ## Stato attuale
 - Repository pronta per ricevere il PDF dell'intervista.

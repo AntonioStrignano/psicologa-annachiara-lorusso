@@ -1,0 +1,105 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import site from "../content/site/site.json";
+
+const lastUpdated = "24 luglio 2026";
+---
+
+<BaseLayout
+  title="Privacy Policy | Dott.ssa Annachiara Lorusso"
+  description="Informativa sul trattamento dei dati personali ai sensi del Regolamento UE 2016/679 (GDPR)."
+>
+  <section class="section-pad">
+    <div class="container-site max-w-4xl">
+      <p class="section-eyebrow mb-3">Informativa privacy</p>
+      <h1 class="font-headline text-4xl leading-tight text-secondary md:text-5xl">Privacy Policy</h1>
+      <p class="mt-3 leading-relaxed text-on-surface-variant">
+        La presente informativa descrive le modalità con cui vengono trattati i dati personali degli utenti che visitano questo sito.
+      </p>
+      <p class="mt-2 text-sm text-on-surface-variant/85">Ultimo aggiornamento: {lastUpdated}</p>
+
+      <div class="mt-6 space-y-4">
+        <section class="card-soft-elevated rounded-2xl border border-outline-variant/35 p-5 md:p-6">
+          <h2 class="font-headline text-2xl text-secondary">1. Titolare del trattamento</h2>
+          <p class="mt-2 leading-relaxed text-on-surface-variant">
+            Titolare del trattamento è {site.brandName}, contattabile all'indirizzo email
+            <a href={`mailto:${site.email}`} class="font-semibold text-secondary underline decoration-secondary/40 underline-offset-4"> {site.email}</a>
+            e al numero
+            <a href={`tel:${site.phone.replace(/\s+/g, "")}`} class="font-semibold text-secondary underline decoration-secondary/40 underline-offset-4"> {site.phone}</a>.
+          </p>
+        </section>
+
+        <section class="card-soft-elevated rounded-2xl border border-outline-variant/35 p-5 md:p-6">
+          <h2 class="font-headline text-2xl text-secondary">2. Dati trattati</h2>
+          <p class="mt-2 leading-relaxed text-on-surface-variant">Durante la navigazione possono essere trattati:</p>
+          <ul class="mt-2 list-disc space-y-1 pl-5 leading-relaxed text-on-surface-variant">
+            <li>dati tecnici di navigazione (es. indirizzo IP, user agent, log tecnici del server);</li>
+            <li>dati forniti volontariamente dall'utente tramite canali esterni collegati dal sito (es. Google Form, email, WhatsApp);</li>
+            <li>dati necessari a rispondere a richieste informative o di primo contatto professionale.</li>
+          </ul>
+        </section>
+
+        <section class="card-soft-elevated rounded-2xl border border-outline-variant/35 p-5 md:p-6">
+          <h2 class="font-headline text-2xl text-secondary">3. Finalità e base giuridica</h2>
+          <ul class="mt-2 list-disc space-y-1 pl-5 leading-relaxed text-on-surface-variant">
+            <li>rispondere a richieste di contatto e organizzare il primo colloquio (art. 6, par. 1, lett. b GDPR);</li>
+            <li>adempiere a obblighi legali e fiscali, quando applicabili (art. 6, par. 1, lett. c GDPR);</li>
+            <li>tutelare i diritti del Titolare in sede giudiziaria, se necessario (art. 6, par. 1, lett. f GDPR).</li>
+          </ul>
+        </section>
+
+        <section class="card-soft-elevated rounded-2xl border border-outline-variant/35 p-5 md:p-6">
+          <h2 class="font-headline text-2xl text-secondary">4. Modalità del trattamento e tempi di conservazione</h2>
+          <p class="mt-2 leading-relaxed text-on-surface-variant">
+            I dati sono trattati con strumenti elettronici e misure organizzative adeguate a proteggerli da accessi non autorizzati,
+            perdita o divulgazione.
+          </p>
+          <p class="mt-2 leading-relaxed text-on-surface-variant">
+            I dati di contatto sono conservati per il tempo necessario a gestire la richiesta e, in ogni caso,
+            non oltre 24 mesi dall'ultimo contatto, salvo diversi obblighi di legge.
+          </p>
+        </section>
+
+        <section class="card-soft-elevated rounded-2xl border border-outline-variant/35 p-5 md:p-6">
+          <h2 class="font-headline text-2xl text-secondary">5. Destinatari dei dati</h2>
+          <p class="mt-2 leading-relaxed text-on-surface-variant">I dati possono essere trattati da fornitori tecnici strettamente necessari al funzionamento del servizio, tra cui:</p>
+          <ul class="mt-2 list-disc space-y-1 pl-5 leading-relaxed text-on-surface-variant">
+            <li>fornitore hosting e infrastruttura tecnica del sito;</li>
+            <li>servizi esterni attivati su iniziativa dell'utente tramite link (Google Forms, WhatsApp, Instagram).</li>
+          </ul>
+          <p class="mt-2 leading-relaxed text-on-surface-variant">
+            Tali soggetti operano come autonomi titolari o responsabili del trattamento secondo i rispettivi termini di servizio.
+          </p>
+        </section>
+
+        <section class="card-soft-elevated rounded-2xl border border-outline-variant/35 p-5 md:p-6">
+          <h2 class="font-headline text-2xl text-secondary">6. Trasferimenti extra UE</h2>
+          <p class="mt-2 leading-relaxed text-on-surface-variant">
+            Alcuni fornitori tecnologici possono trattare dati al di fuori dello Spazio Economico Europeo.
+            In tali casi il trasferimento avviene nel rispetto delle garanzie previste dal GDPR (es. clausole contrattuali standard).
+          </p>
+        </section>
+
+        <section class="card-soft-elevated rounded-2xl border border-outline-variant/35 p-5 md:p-6">
+          <h2 class="font-headline text-2xl text-secondary">7. Diritti dell'interessato</h2>
+          <p class="mt-2 leading-relaxed text-on-surface-variant">
+            L'utente può esercitare in qualsiasi momento i diritti previsti dagli artt. 15-22 GDPR, tra cui:
+            accesso, rettifica, cancellazione, limitazione, opposizione e portabilità dei dati.
+          </p>
+          <p class="mt-2 leading-relaxed text-on-surface-variant">
+            Le richieste possono essere inviate a
+            <a href={`mailto:${site.email}`} class="font-semibold text-secondary underline decoration-secondary/40 underline-offset-4"> {site.email}</a>.
+            Resta salvo il diritto di proporre reclamo al Garante per la Protezione dei Dati Personali.
+          </p>
+        </section>
+
+        <section class="card-soft-elevated rounded-2xl border border-outline-variant/35 p-5 md:p-6">
+          <h2 class="font-headline text-2xl text-secondary">8. Aggiornamenti della presente informativa</h2>
+          <p class="mt-2 leading-relaxed text-on-surface-variant">
+            La presente Privacy Policy può essere aggiornata nel tempo. Le modifiche saranno pubblicate su questa pagina con data di aggiornamento.
+          </p>
+        </section>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
