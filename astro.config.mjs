@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://annachiaralorusso.it',
+  site: 'https://psicologaannachiaralorusso.it',
   integrations: [sitemap()],
   redirects: {
     '/aree-di-intervento': '/servizi#aree-di-intervento'

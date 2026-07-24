@@ -161,6 +161,7 @@
 - Create e pubblicate le pagine legali operative `src/pages/privacy-policy.astro` e `src/pages/cookie-policy.astro`, integrate nel layout globale e allineate ai link footer gia presenti.
 - Eseguito pass completo sugli accenti nei testi visibili del sito con correzioni mirate (es. "è", "più", "risponderò", "Obesità").
 - Corretto il link footer "Mappa del Sito" per puntare alla sitemap reale generata da Astro (`/sitemap-index.xml`) al posto della route non esistente `/mappa-del-sito`.
+- Aggiornato il dominio ufficiale del sito in configurazione SEO/sitemap: `astro.config.mjs` (`site`) e `public/robots.txt` ora puntano a `https://psicologaannachiaralorusso.it`.
 
 ## Stato attuale
 - Repository pronta per ricevere il PDF dell'intervista.
